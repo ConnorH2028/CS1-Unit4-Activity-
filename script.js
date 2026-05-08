@@ -10,6 +10,7 @@ const body = document.querySelector("body");
 const heading = document.querySelector("#main-heading");
 const description = document.querySelector("#description");
 const toggleBtn = document.querySelector("#toggle");
+const image = document.querySelector("#image");
 // CONST is like LET, but the value won't change
 
 // JS can now change attributes & properties!
@@ -33,6 +34,7 @@ function toggleMode() {
         toggleBtn.style.background = "black";
         toggleBtn.style.color = "white";
         toggleBtn.style.borderColor = "white";
+        image.src = "Symbiote_suit-removebg-preview.png";
     }
     else {
         console.log("apply light styles");
@@ -44,6 +46,7 @@ function toggleMode() {
         toggleBtn.style.background = "white";
         toggleBtn.style.color = "black";
         toggleBtn.style.borderColor = "black";
+        image.src = "Spider_man-removebg-preview.png";
     }
 
 }
