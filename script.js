@@ -52,3 +52,31 @@ function toggleMode() {
 }
 // Attach function to the actual button
 toggleBtn.addEventListener("click", toggleMode);
+
+
+// REVIEW
+// 1. Select an element to target (button)
+const hackerBtn = document.querySelector("#hacker");
+// 2. Attach function to the button
+hackerBtn.addEventListener("click", setHacker);
+// 3. Define what happens when triggered
+function setHacker() {
+    body.style.background = "black";
+    body.style.fontFamily = "monospace";
+    description.style.color = "rgb(0,160,8)";
+    description.textContent = "YOU GOT HACKED ;)";
+}
+
+const jojoBtn = document.querySelector("#jojo");
+
+jojoBtn.addEventListener("click", setJojo)
+
+function setJojo() {
+    body.style.backgroundImage ='url("jojo go.gif")';
+    heading.textContent = "ほほ。。。";
+    heading.style.color = "Gold";
+    description.textContent = "向かった来るのか";
+    description.style.color = "Gold";
+    image.src = "Jojo meme.jpg";
+
+}
