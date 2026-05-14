@@ -34,6 +34,12 @@ function toggleMode() {
         toggleBtn.style.background = "black";
         toggleBtn.style.color = "white";
         toggleBtn.style.borderColor = "white";
+        jojoBtn.style.background = "black";
+        jojoBtn.style.color = "white";
+        jojoBtn.style.borderColor = "white";
+        hackerBtn.style.background = "black";
+        hackerBtn.style.color = "white";
+        hackerBtn.style.borderColor = "white";
         image.src = "Symbiote_suit-removebg-preview.png";
     }
     else {
@@ -46,6 +52,12 @@ function toggleMode() {
         toggleBtn.style.background = "white";
         toggleBtn.style.color = "black";
         toggleBtn.style.borderColor = "black";
+        jojoBtn.style.background = "white";
+        jojoBtn.style.color = "black";
+        jojoBtn.style.borderColor = "black";
+        hackerBtn.style.background = "white";
+        hackerBtn.style.color = "black";
+        hackerBtn.style.borderColor = "black";
         image.src = "Spider_man-removebg-preview.png";
     }
 
@@ -65,6 +77,18 @@ function setHacker() {
     body.style.fontFamily = "monospace";
     description.style.color = "rgb(0,160,8)";
     description.textContent = "YOU GOT HACKED ;)";
+    image.src = "Error.jpg";
+    heading.textContent = "Un Oh";
+    heading.style.color = "rgb(0,160,8)";
+    toggleBtn.style.background = "black";
+    toggleBtn.style.color = "rgb(0,160,8)";
+    toggleBtn.style.borderColor = "black";
+    jojoBtn.style.background = "black";
+    jojoBtn.style.color = "rgb(0,160,8)";
+    jojoBtn.style.borderColor = "black";
+    hackerBtn.style.background = "black";
+    hackerBtn.style.color = "rgb(0,160,8)";
+    hackerBtn.style.borderColor = "black";
 }
 
 const jojoBtn = document.querySelector("#jojo");
@@ -78,5 +102,17 @@ function setJojo() {
     description.textContent = "向かった来るのか";
     description.style.color = "Gold";
     image.src = "Jojo meme.jpg";
+    toggleBtn.style.background = "black";
+    toggleBtn.style.color = "gold";
+    toggleBtn.textContent = "切り替える";
+    toggleBtn.style.borderColor = "black";
+    jojoBtn.style.background = "black";
+    jojoBtn.style.color = "gold";
+    jojoBtn.style.borderColor = "black";
+    jojoBtn.textContent = "やれやれだぜ";
+    hackerBtn.style.background = "black";
+    hackerBtn.style.color = "gold";
+    hackerBtn.style.borderColor = "black";
+    hackerBtn.textContent ="ハッカーモード";
 
 }
