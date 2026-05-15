@@ -11,6 +11,7 @@ const heading = document.querySelector("#main-heading");
 const description = document.querySelector("#description");
 const toggleBtn = document.querySelector("#toggle");
 const image = document.querySelector("#image");
+const emoji = document.querySelector("#emoji");
 // CONST is like LET, but the value won't change
 
 // JS can now change attributes & properties!
@@ -28,6 +29,7 @@ function toggleMode() {
         console.log("apply dark styles");
         body.style.background = "black";
         heading.style.color = "white";
+        heading.textContent = "Light & Dark Website";
         description.style.color ="white";
         description.textContent = "Welcome to the dark side! 🌑";
         toggleBtn.textContent = "Switch to Light";
@@ -37,15 +39,19 @@ function toggleMode() {
         jojoBtn.style.background = "black";
         jojoBtn.style.color = "white";
         jojoBtn.style.borderColor = "white";
+        jojoBtn.textContent ="What are you doing?";
         hackerBtn.style.background = "black";
         hackerBtn.style.color = "white";
         hackerBtn.style.borderColor = "white";
+        hackerBtn.textContent = "Hacker Mode";
+        emoji.classList.remove("animated");
         image.src = "Symbiote_suit-removebg-preview.png";
     }
     else {
         console.log("apply light styles");
         body.style.background = "white";
         heading.style.color = "black";
+        heading.textContent = "Light & Dark Website";
         description.style.color = "black";
         description.textContent = "Welcome to the light side! ☀️";
         toggleBtn.textContent = "Switch to Dark";
@@ -55,9 +61,12 @@ function toggleMode() {
         jojoBtn.style.background = "white";
         jojoBtn.style.color = "black";
         jojoBtn.style.borderColor = "black";
+        jojoBtn.textContent ="What are you doing?";
         hackerBtn.style.background = "white";
         hackerBtn.style.color = "black";
         hackerBtn.style.borderColor = "black";
+        hackerBtn.textContent = "Hacker Mode";
+        emoji.classList.remove("animated");
         image.src = "Spider_man-removebg-preview.png";
     }
 
@@ -83,12 +92,17 @@ function setHacker() {
     toggleBtn.style.background = "black";
     toggleBtn.style.color = "rgb(0,160,8)";
     toggleBtn.style.borderColor = "black";
+    toggleBtn.textContent = "Switch Mode";
     jojoBtn.style.background = "black";
     jojoBtn.style.color = "rgb(0,160,8)";
     jojoBtn.style.borderColor = "black";
+    jojoBtn.textContent ="What are you doing?";
     hackerBtn.style.background = "black";
     hackerBtn.style.color = "rgb(0,160,8)";
     hackerBtn.style.borderColor = "black";
+    hackerBtn.textContent = "Hacker Mode";
+    //ATTACH ANIMATIONS using class names:
+    emoji.classList.add("animated");
 }
 
 const jojoBtn = document.querySelector("#jojo");
@@ -114,5 +128,6 @@ function setJojo() {
     hackerBtn.style.color = "gold";
     hackerBtn.style.borderColor = "black";
     hackerBtn.textContent ="ハッカーモード";
+    emoji.classList.remove("animated");
 
 }
